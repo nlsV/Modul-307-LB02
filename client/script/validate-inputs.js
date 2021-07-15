@@ -1,12 +1,12 @@
 // elemente benennen
 const form = document.getElementById('form');
+const name = document.getElementById('name');
 const username = document.getElementById('username');
 const email = document.getElementById('email');
+const telefon = document.getElementById('telefonnummer');
 const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
-const telefon = document.getElementById('telefonnummer');
 const agb = document.getElementById('agbcheck').checked;
-const name = document.getElementById('name');
 
 // error anzeigen
 function showError(input, message) {
