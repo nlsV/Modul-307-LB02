@@ -80,14 +80,14 @@ function validateForm(){
 }
 
 // überprüfung passwort (equal)
-function checkPassword (input){
-var password = document.querySelector('#password').value,
-    confirmpassword = document.querySelector('#password2').value;
-
-if (password != confirmpassword){
-  showError(input, 'Passwort stimmt nicht überein');
-  return false;
-}
+function checkPassword (input1, input2){
+  let pw1 = input1.value.trim();
+  let pw2 = input1.value.trim();
+  if (pw1 === pw2) {
+    showSuccess(input2);
+  } else {
+    showError(input, 'Passwort stimmt nicht überein');
+  }
 }
 
 // überprüfung nummer
